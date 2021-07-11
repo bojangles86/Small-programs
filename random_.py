@@ -1,11 +1,14 @@
-# import Numpy
+# import Numpy and pyplot
 import numpy as np
+import matplotlib.pyplot as plt
+
 # seed is set
 np.random.seed(123)
+
 # Initialize random_walk
 random_walk = [0]
 
-# Complete the ___
+#
 for x in range(100) :
     # Set step: last element in random_walk
     step = random_walk[-1]
@@ -26,3 +29,10 @@ for x in range(100) :
 
 # Print random_walk
 print(random_walk)
+
+# Plot random_walk
+plt.plot(random_walk)
+
+# Show the plot
+plt.show()
+
